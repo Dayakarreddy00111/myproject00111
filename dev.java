@@ -37,5 +37,3 @@ public class DeploySoftware {
         }
     }
 }
-// Uses SSH keys or passwords to "log in" to remote server and deploy
-jsch.getSession("user", "server.com", 22); // login to deploy
