@@ -6,7 +6,7 @@ import java.io.File;
 public class DeploySoftware {
 
     public static void main(String[] args) {
-        String user = "remoteUser";
+        String user = "remotemaster";
         String host = "remote.server.com";
         int port = 22;
         String privateKey = "/path/to/private/key";
@@ -37,3 +37,5 @@ public class DeploySoftware {
         }
     }
 }
+// Uses SSH keys or passwords to "log in" to remote server and deploy
+jsch.getSession("user", "server.com", 22); // login to deploy
